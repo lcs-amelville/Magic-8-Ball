@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var fortune: UILabel!
     
     // Mark: Properties
-    let fortuneGenerator = Int.random(in: 1...8)
+    
     //Mark: Initilizers
     
     //Mark: meathods (functions) - behaviors
@@ -31,6 +31,9 @@ class ViewController: UIViewController {
 
 
     @IBAction func shake(_ sender: Any) {
+        
+        let fortuneGenerator = Int.random(in: 1...12)
+        
         switch fortuneGenerator {
         case 1:
             fortune.text = ("you have good luck today")
@@ -48,7 +51,14 @@ class ViewController: UIViewController {
             fortune.text = ("goodluck")
         case 8:
             fortune.text = ("you will have fun")
-            
+        case 9:
+            fortune.text = ("you are right")
+        case 10:
+            fortune.text = ("you will lose")
+        case 11:
+            fortune.text = ("good luck")
+        case 12:
+            fortune.text = ("you are 50% RIGHT")
         default:
             fortune.text = ("shake the ball")
         
