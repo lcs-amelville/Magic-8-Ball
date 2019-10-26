@@ -45,7 +45,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="fortune" destination="kkL-wy-5AI" id="uNH-CB-uI8"/>
+                        <outlet property="fortune" destination="qRH-JO-zKT" id="D1E-6G-kXq"/>
                         <outletCollection property="Fortune" destination="qRH-JO-zKT" collectionClass="NSMutableArray" id="cl2-1W-9sE"/>
                     </connections>
                 </viewController>

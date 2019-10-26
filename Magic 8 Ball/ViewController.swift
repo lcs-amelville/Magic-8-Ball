@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var fortune: UIButton!
+  
+    @IBOutlet weak var fortune: UILabel!
     
     // Mark: Properties
     let fortuneGenerator = Int.random(in: 1...8)
@@ -24,8 +25,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-   
-    
  
     
 // make switch for the possibliitys and send it tothe 8 ball
@@ -34,28 +33,25 @@ class ViewController: UIViewController {
     @IBAction func shake(_ sender: Any) {
         switch fortuneGenerator {
         case 1:
-            print("you have good luck today")
-            fortune.text = "$\(you have good luck today")
+            fortune.text = ("you have good luck today")
         case 2:
-            print("You have bad luck today")e
+            fortune.text = ("You have bad luck today")
         case 3:
-            print("you will win when you don't expect to")
+        fortune.text = ("you will win when you don't expect to")
         case 4:
-            print("NO")
+            fortune.text = ("NO")
         case 5:
-            print("YES")
+            fortune.text = ("YES")
         case 6:
-            print ("maybe")
+            fortune.text = ("maybe")
         case 7:
-            print ("goodluck")
+            fortune.text = ("goodluck")
         case 8:
-            print ("you will have fun")
+            fortune.text = ("you will have fun")
             
         default:
-            print ("shake the ball")
+            fortune.text = ("shake the ball")
         
-            
-            
     }
     
 }
